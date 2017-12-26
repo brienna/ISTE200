@@ -1,0 +1,24 @@
+
+Car
+        Model:    Ford
+        Color:    Green
+        Cost:     $14000.00
+        MPG/GPH:  28.2
+        Type:     Coupe
+        Towing:   Not included
+
+Truck
+        Model:    Dodge
+        Color:    Red
+        Cost:     $25234.56
+        MPG/GPH:  34.1
+        Load:     Full ton
+        Engine:   4 cylinders or smaller
+
+Bicycle
+        Model:    Schwinn
+        Color:    blue
+        Cost:     $200.00
+        MPG/GPH:  0.0
+        Function: mountain
+        Material: carbon fiber
