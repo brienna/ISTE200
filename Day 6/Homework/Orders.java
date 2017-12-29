@@ -39,7 +39,7 @@ public class Orders {
             while (!validInput) {
                 // Prompt user to enter order
                 System.out.print("Do you want to order a Truck (T/t), Car (C/c)," +
-                    " Boat (B/b), Motorcycle (M/m), or Bicycle (K/k)? ");
+                    " Boat (B/b), or Bicycle (K/k)? ");
                 String choice = scan.nextLine().trim().toUpperCase();
 
                 // Check if entered order is valid (truck or car)
@@ -124,10 +124,8 @@ public class Orders {
             BufferedOutputStream bos = new BufferedOutputStream(fos);
             ObjectOutputStream oos = new ObjectOutputStream(bos);
 
-            // Save each object
-            for (Vehicle order : orders) {
-                oos.writeObject(order);
-            }
+            // Save all objects
+            oos.writeObject(orders);
 
             // Flush the buffer and close the stream
             oos.flush();
@@ -149,16 +147,12 @@ public class Orders {
                 BufferedInputStream bis = new BufferedInputStream(fis);
                 ObjectInputStream ois = new ObjectInputStream(bis);
 
-                // While file contains objects, read object into ArrayList
-                while (true) {
-                    try {
-                        System.out.println("Adding existing order...");
-                        Vehicle order = (Vehicle) ois.readObject();
-                        orders.add(order);
-                    } catch (EOFException eof) {
-                        System.out.println("End of file");
-                        break;  // loop only breaks at end of file
-                    }
+                // Read orders
+                Object obj = ois.readObject();
+                ArrayList ar = (ArrayList) obj;
+                for (Object x : ar) {
+                    orders.add((Vehicle) x);
+                    System.out.println("Adding order...");
                 }
 
                 ois.close();

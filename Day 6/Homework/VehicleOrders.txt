@@ -1,17 +1,9 @@
 
-Car
-        Model:    Ford
-        Color:    Green
-        Cost:     $14000.00
-        MPG/GPH:  28.2
-        Type:     Coupe
-        Towing:   Not included
-
 Truck
-        Model:    Dodge
-        Color:    Red
-        Cost:     $25234.56
-        MPG/GPH:  34.1
+        Model:    Dodge RamTruck
+        Color:    red
+        Cost:     $25000.00
+        MPG/GPH:  34.2
         Load:     Full ton
         Engine:   4 cylinders or smaller
 
@@ -19,6 +11,30 @@ Bicycle
         Model:    Schwinn
         Color:    blue
         Cost:     $200.00
+        MPG/GPH:  0.0
+        Function: mountain
+        Material: carbon fiber
+
+Boat
+        Model:    Some fancy model
+        Color:    white
+        Cost:     $20000.00
+        MPG/GPH:  3.5
+        Type:     Pontoon
+        Made of:  Steel
+
+Car
+        Model:    Honda Fit
+        Color:    silver
+        Cost:     $10000.00
+        MPG/GPH:  25.2
+        Type:     Coupe
+        Towing:   Included
+
+Bicycle
+        Model:    Schwinn
+        Color:    red
+        Cost:     $0.00
         MPG/GPH:  0.0
         Function: mountain
         Material: carbon fiber
