@@ -1,0 +1,32 @@
+
+Car
+        Model:    Honda Fit
+        Color:    silver
+        Cost:     $13000.00
+        MPG/GPH:  20.7
+        Type:     Sedan
+        Towing:   Included
+
+Boat
+        Model:    lakjsdf
+        Color:    lksdjf
+        Cost:     $3895.00
+        MPG/GPH:  3.5
+        Type:     Pontoon
+        Made of:  Wood
+
+Truck
+        Model:    Dodge RamTruck
+        Color:    red
+        Cost:     $2000.00
+        MPG/GPH:  45.5
+        Load:     Full ton
+        Engine:   5 cylinders or larger
+
+Bicycle
+        Model:    Schwinn
+        Color:    blue
+        Cost:     $0.00
+        MPG/GPH:  0.0
+        Function: mountain
+        Material: carbon fiber
